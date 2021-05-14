@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { FaBars, FaAsterisk } from "react-icons/fa";
 import Data from './NavbarItems';
+import './Navbar.css';
 
 const Navbar = () => {
 
@@ -11,8 +12,8 @@ const Navbar = () => {
 
     return (
         <>
-            <div className="bars">
-                <Link to="#">
+            <div className="navbar">
+                <Link to="#" className="menu-bars">
                     <FaBars onClick={toggleSidebar}/>
                 </Link>
             </div>
