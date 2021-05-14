@@ -26,7 +26,7 @@ const Navbar = () => {
                     </li>
                     {Data.map((items, index) => {
                         return (
-                            <li key={index} className={items.class}>
+                            <li key={index} onClick={toggleSidebar} className={items.class}>
                                 <Link to={items.path}>
                                     {items.icon}
                                     <span>{items.name}</span>
