@@ -7,7 +7,7 @@ mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/hikes', {
 
 var hikeSeed = [
   {
-    name: 'Fiery Gizzard',
+    trail: 'Fiery Gizzard',
     distance: 3,
     date: new Date(Date.now()),
   },
