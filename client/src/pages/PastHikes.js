@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import API from '../utils/HikeAPI';
+import './PastHikes.css';
 
 const PastHikes = () => {
 
@@ -7,11 +8,15 @@ const PastHikes = () => {
 
     const RenderSavedList = hikeList.map((hike, index) => {
         return (
-            <li key={index}>
-                Trail: {hike.trail}
-                Distance: {hike.distance}
-                Date: {hike.date}
-            </li>
+            <div key={index} className='hike-card'>
+                <div className='trail-info'>
+                    <h3>Trail: {hike.trail}</h3>
+                    <p>Distance: {hike.distance} Miles</p>
+                </div>
+                <div className='trail-footer'>
+                    <p>Date: {hike.date}</p>
+                </div>
+            </div>
         );
     })  
 
@@ -28,11 +33,9 @@ const PastHikes = () => {
 
     return (
         <div className='container'>
-            <h3>Past Hikes</h3>
+            <h2 className='hike-header'>Past Hikes</h2>
             <div className='past-hike-container'>
-                <ul className='past-hike-list'>
-                    {hikeList[0] ? RenderSavedList : <li>No hikes yet!</li>}
-                </ul>
+                {hikeList[0] ? RenderSavedList : <li>No hikes yet!</li>}
             </div>
         </div>
     )
