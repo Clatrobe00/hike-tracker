@@ -5,6 +5,8 @@ https://opensource.org/licenses/MIT
 ## Description
 
 A full-stack (MongoDB, Express, React.js, Node.js) web application that allows the user to store hike names, dates, and distances in a MongoDB database and also keeps track of the user's total hike mileage.
+
+This application is deployed at: https://hike-tracker-v2.herokuapp.com/
       
 ## Table of Contents 
       
