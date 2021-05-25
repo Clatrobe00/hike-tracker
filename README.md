@@ -1,29 +1,65 @@
-# Create React Express App
+# Hike-Tracker
+![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
+https://opensource.org/licenses/MIT
 
-## About This Boilerplate
+## Description
 
-This setup allows for a Node/Express/React app which can be easily deployed to Heroku.
+A full-stack (MongoDB, Express, React.js, Node.js) web application that allows the user to store hike names, dates, and distances in a MongoDB database and also keeps track of the user's total hike mileage.
+      
+## Table of Contents 
+      
+* [Installation](#installation)
+      
+* [Usage](#usage)
+      
+* [Contributing](#contributing)
 
-The front-end React app will auto-reload as it's updated via webpack dev server, and the backend Express app will auto-reload independently with nodemon.
+* [Next](#next)
+      
+* [Questions](#questions)
 
-## Starting the app locally
+* [License](#license)
+      
+## Installation
 
-Start by installing front and backend dependencies. While in this directory, run the following command:
+npm i to install all relevant dependencies
+      
+## Usage
 
-```
-npm install
-```
+Currently, this application allows the user to enter new hike data (for trail name and distance):
 
-This should install node modules within the server and the client folder.
+![Enter new info](Images/new.png)
 
-After both installations complete, run the following command in your terminal:
+![home page](Images/home.png)
 
-```
-npm start
-```
+View past hikes with total mileage:
 
-Your app should now be running on <http://localhost:3000>. The Express server should intercept any AJAX requests from the client.
+![past hikes](Images/pastnew.png)
 
-## Deployment (Heroku)
+Use the sliding nav menu to navigate the site:
 
-To deploy, simply add and commit your changes, and push to Heroku. As is, the NPM scripts should take care of the rest.
+![nav](Images/menu.png)
+        
+## Contributing
+
+If you would like to make a contribution (or know of a good source of information for trails) simply make a pull request with a detailed description of your contribution, or feel free to contact me at my email: Charles.f.latrobe@gmail.com.
+      
+## Next
+      
+The most pressing feature I would like to add is a search feature that allows the user to locate a specific hiking area from a database- difficulties in finding an API that is supported and supplies trail information.
+
+
+      
+## Questions
+
+For questions regarding this repo contact me at Charles.f.latrobe@gmail.com or visit my repository at https://github.com/Clatrobe00
+
+## License
+
+Copyright 2021 undefined
+
+    Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+    
+    The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+    
+    THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
