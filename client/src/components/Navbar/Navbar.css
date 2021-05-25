@@ -82,3 +82,9 @@
 span {
     margin-left: 10px;
 }
+
+.nav-item.disabled {
+    pointer-events: none;
+    
+    
+}

@@ -5,19 +5,19 @@ const Data = [{
     name: 'Home',
     path: '/',
     icon: <FaHome />,
-    class: 'nav-item'
+    class: 'nav-item',
 },
 {
-    name: 'Find Hike',
+    name: 'Find Hike - Coming Soon!',
     path: '/FindHikes',
     icon: <FaSearchLocation />,
-    class: 'nav-item'
+    class: 'nav-item disabled',
 },
 {
     name: 'Past Hikes',
     path: '/PastHikes',
     icon: <FaHistory />,
-    class: 'nav-item'
+    class: 'nav-item',
 }
 ]
 
